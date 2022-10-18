@@ -16,6 +16,14 @@
 		E708932428FC4A3B00474DA2 /* FreshShotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708932328FC4A3B00474DA2 /* FreshShotsTests.swift */; };
 		E708932E28FC4A3B00474DA2 /* FreshShotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708932D28FC4A3B00474DA2 /* FreshShotsUITests.swift */; };
 		E708933028FC4A3B00474DA2 /* FreshShotsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708932F28FC4A3B00474DA2 /* FreshShotsUITestsLaunchTests.swift */; };
+		E708933E28FC8CFD00474DA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708933D28FC8CFD00474DA2 /* Constants.swift */; };
+		E708933F28FC8CFD00474DA2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708933D28FC8CFD00474DA2 /* Constants.swift */; };
+		E708934128FC8F1900474DA2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708934028FC8F1900474DA2 /* APIService.swift */; };
+		E708934228FC8F1900474DA2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708934028FC8F1900474DA2 /* APIService.swift */; };
+		E71BB3B028FD96820016BD83 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BB3AF28FD96820016BD83 /* GeneralExtensions.swift */; };
+		E71BB3B128FD96820016BD83 /* GeneralExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BB3AF28FD96820016BD83 /* GeneralExtensions.swift */; };
+		E71BB3B428FDEA770016BD83 /* ImgurResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BB3B328FDEA770016BD83 /* ImgurResponseModels.swift */; };
+		E71BB3B528FDEA770016BD83 /* ImgurResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BB3B328FDEA770016BD83 /* ImgurResponseModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,10 @@
 		E708932928FC4A3B00474DA2 /* FreshShotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshShotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E708932D28FC4A3B00474DA2 /* FreshShotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshShotsUITests.swift; sourceTree = "<group>"; };
 		E708932F28FC4A3B00474DA2 /* FreshShotsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshShotsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E708933D28FC8CFD00474DA2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E708934028FC8F1900474DA2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E71BB3AF28FD96820016BD83 /* GeneralExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralExtensions.swift; sourceTree = "<group>"; };
+		E71BB3B328FDEA770016BD83 /* ImgurResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurResponseModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		E708930B28FC4A3A00474DA2 /* FreshShots */ = {
 			isa = PBXGroup;
 			children = (
+				E71BB3B628FDEB100016BD83 /* Service */,
+				E71BB3B228FDEA100016BD83 /* Model */,
+				E708933C28FC8CDB00474DA2 /* Utils */,
 				E708930C28FC4A3A00474DA2 /* AppDelegate.swift */,
 				E708930E28FC4A3A00474DA2 /* SceneDelegate.swift */,
 				E708931028FC4A3A00474DA2 /* ViewController.swift */,
@@ -125,6 +140,31 @@
 				E708932F28FC4A3B00474DA2 /* FreshShotsUITestsLaunchTests.swift */,
 			);
 			path = FreshShotsUITests;
+			sourceTree = "<group>";
+		};
+		E708933C28FC8CDB00474DA2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E708933D28FC8CFD00474DA2 /* Constants.swift */,
+				E71BB3AF28FD96820016BD83 /* GeneralExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E71BB3B228FDEA100016BD83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E71BB3B328FDEA770016BD83 /* ImgurResponseModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E71BB3B628FDEB100016BD83 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E708934028FC8F1900474DA2 /* APIService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +301,10 @@
 				E708931128FC4A3A00474DA2 /* ViewController.swift in Sources */,
 				E708930D28FC4A3A00474DA2 /* AppDelegate.swift in Sources */,
 				E708930F28FC4A3A00474DA2 /* SceneDelegate.swift in Sources */,
+				E708934128FC8F1900474DA2 /* APIService.swift in Sources */,
+				E71BB3B428FDEA770016BD83 /* ImgurResponseModels.swift in Sources */,
+				E71BB3B028FD96820016BD83 /* GeneralExtensions.swift in Sources */,
+				E708933E28FC8CFD00474DA2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71BB3B128FD96820016BD83 /* GeneralExtensions.swift in Sources */,
 				E708932428FC4A3B00474DA2 /* FreshShotsTests.swift in Sources */,
+				E71BB3B528FDEA770016BD83 /* ImgurResponseModels.swift in Sources */,
+				E708934228FC8F1900474DA2 /* APIService.swift in Sources */,
+				E708933F28FC8CFD00474DA2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +500,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jebamoses.FreshShots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,6 +531,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jebamoses.FreshShots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
